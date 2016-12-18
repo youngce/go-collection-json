@@ -1,9 +1,12 @@
 package go_collection_json
 
+
+
 type Item struct {
 	Prompt string `json:"prompt,omitempty"`
 	Name string `json:"name"`
 }
+
 type ValueItem struct {
 	Item
 	//Prompt string `json:"prompt,omitempty"`
@@ -18,4 +21,5 @@ type ObjectItem struct {
 	Item
 	Object interface{} `json:"object,omitempty"`
 }
+
 
